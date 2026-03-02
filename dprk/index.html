@@ -38,26 +38,16 @@
 			</center>
 		</header>
 		<main>
-			<center>
-				<form method="get" action="http://search.yahoo.com/search">
-					<div style="border:1px solid black;padding:4px;width:20em;">
-						<table border="0" align="center" cellpadding="0">
-							<tr>
-								<td>
-									<input type="text"   name="p" size="25" maxlength="255" value="" />
-									<input type="submit" value="Search Yahoo!" />
-								</td>
-							</tr>
-							<tr>
-								<td align="center" style="font-size:75%">
-									<input type="checkbox"  name="p" value="site:yoursite.com" checked /> Only Search Your Site
-									<br />
-								</td>
-							</tr>
-						</table>
-					</div>
-				</form>
-			</center>
+			<div class="search">
+				<center>
+					<form method="get" action="https://duckduckgo.com/">
+						<input type="hidden" name="sites" value="https://www.meowixen.com/dprk">
+						<label for="search">Search</label>
+						<input type="search" id="search" name="q">
+						<button type="submit">Go</button>
+					</form>
+				</center>
+			</div>
 		</main>
 	</body>
 </html>
