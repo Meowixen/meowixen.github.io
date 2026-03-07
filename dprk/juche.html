@@ -1,1 +1,64 @@
 <!DOCTYPE html>
+<html>
+	<!--
+	⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+	⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+	⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛
+	⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+	⣿⣽⢯⣿⣽⢯⣿⣽⢯⣿⡽⣯⣿⡽⣯⣿⡽⣯⠿⠝⢋⠛⠽⢯⣿⣽⢯⣿⡽⣯⣿⡽⣯⣿⡽⣯⣿⡽⣯⣿⡽⣯⣿⡽⣯⣿⡽⣯⣿⡽⣯⣿⡽⣯⣿⡽⣯⣿⡽⣯⣿⢾
+	⣿⢾⣻⡷⣯⣿⣳⣯⣿⣳⣿⣻⢾⣽⣟⡞⠋⠀⠀⠀⣾⡄⠀⠀⠈⠻⣯⣷⢿⣻⣾⡽⣟⣾⣽⣟⣾⣽⣟⣾⣽⣟⣾⣽⣟⣾⣽⣟⣾⣽⣟⣾⣽⣟⣾⣽⣟⣾⣽⣟⡾⣿
+	⣿⣻⣽⣻⢷⣯⡷⣟⣾⣽⣞⣯⣿⣳⠏⠀⠀⠀⠀⣸⣟⣷⠀⠀⠀⠀⠘⣽⣻⡷⣯⣟⡿⣽⡾⣽⣾⣳⣯⣟⣾⣽⢾⣳⣯⣟⣾⣽⢾⣳⣯⣟⣾⣽⢾⣳⣯⣟⣾⣽⣻⣽
+	⣿⣽⣳⣿⣻⣾⡽⣿⡽⣞⣯⣷⢿⣽⠀⠙⠿⣟⣿⣻⣾⣽⣻⣟⡿⠛⠁⢸⣯⣟⣷⣟⡿⣽⣻⣽⡾⣯⣷⣻⣽⡾⣟⣯⡷⣿⡽⣾⣟⣯⡷⣿⡽⣾⣟⣯⡷⣿⡽⣞⣯⣿
+	⣿⣞⡿⣞⣷⣯⢿⣳⣿⣻⣽⣾⣻⢿⠀⠀⠀⠈⣿⣳⣟⣾⢷⡍⠀⠀⠀⢼⣷⣻⣾⣽⣻⢯⣟⡷⣿⣳⣯⢿⡾⣽⣟⡷⣿⢯⣟⣷⣯⢿⣽⡷⣟⡿⣾⣽⣻⢷⣿⣻⣽⣾
+	⣿⣞⡿⣯⣷⣻⢿⣽⣞⣯⣷⢯⣟⡿⣆⠀⠀⢰⣿⠝⠊⠻⢯⣷⠀⠀⣠⣿⣞⣷⣟⣾⣻⣯⣟⣿⣳⡿⣽⣯⢿⣻⡾⣿⣽⣻⣟⣾⡽⣿⢾⣽⢿⣽⡷⣯⣟⡿⣾⣽⣳⣿
+	⣿⣞⣿⣽⢾⣻⣟⣾⡽⣷⢯⣿⢯⣟⣿⣳⣔⠋⠁⠀⠀⠀⠀⠙⢃⣴⣿⣳⢿⡾⣽⣳⣯⡷⣿⣞⣯⢿⣷⣻⣟⡷⣿⣳⣯⡷⣿⣽⣻⣽⢿⣾⣻⢷⣻⣯⢿⣽⡷⣯⣷⢿
+	⣿⣾⣽⣾⣿⣿⣾⣯⣿⣽⣿⣽⣯⣿⣾⣯⣿⣿⣶⣦⣤⣤⣶⣾⣿⣿⣾⣽⣿⣽⣿⣽⣷⣿⣷⣯⣿⣿⣾⣷⣿⣿⣷⣿⣷⣿⣽⣾⣯⣿⣿⣾⣽⣿⣿⣾⣿⣷⣿⣽⣾⣿
+	⣿⣞⣯⣷⢿⣳⣿⣻⡽⣷⢯⣷⣟⡷⣿⣻⣽⡷⣯⡿⣽⢯⣟⡷⣿⣳⣯⡷⣟⣷⢯⣟⣯⡿⣯⢿⣾⣻⢷⣯⡿⣽⡷⣟⣿⢾⣽⣻⢿⣽⡷⣯⣷⢿⣳⡿⣯⣿⣳⢿⣳⣿
+	⣤⣤⣤⣤⣤⣤⣤⣤⣤⣤⣤⣤⣤⣤⣤⣤⣤⣤⣤⣤⣤⣤⣤⣤⣤⣤⣤⣤⣤⣤⣤⣤⣤⣤⣤⣤⣤⣤⣤⣤⣤⣤⣤⣤⣤⣤⣤⣤⣤⣤⣤⣤⣤⣤⣤⣤⣤⣤⣤⣤⣤⣤
+	⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+	 ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+	-->
+	<head>
+		<title>Juche</title>
+		<link rel="stylesheet" href="style.css">
+		<style>
+			.north{
+				font-size:12px;
+			}
+		</style>
+	</head>
+	<body>
+		<br />
+		<header>
+			<center>
+				<h1>Juche</h1>
+			</center>
+		</header>
+		<div class="info">
+			<center>
+				<a href="https://www.meowixen.com/DPRK">Home</a> | 
+				<a href="juche.html">Juche</a> | 
+				<a href="photos.html">Photos</a> |
+				<a href="search.html">Search</a> 
+			</center>
+		</div>
+		<br />
+		<main>
+			<div class="leaders">
+				<center>
+					<a href="kimilsung.html">
+						<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Kim_Il_Sung_Portrait-4.jpg/1920px-Kim_Il_Sung_Portrait-4.jpg" height="240px" width="200px" alt="Kim Il Sung" title="Kim Il Sung" />
+					</a>
+					<a href="kimjongil.html">
+						<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Kim_Jong_il_Portrait-2.jpg/1280px-Kim_Jong_il_Portrait-2.jpg" height="240px" width="200px" alt="Kim Jong Il" title="Kim Jong Il"  />
+					</a>
+					<a href="kimjongun.html">
+						<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Kim_Jong-un_and_Vladimir_Putin_%282023-09-13%29_12_%28cropped%29.jpg/960px-Kim_Jong-un_and_Vladimir_Putin_%282023-09-13%29_12_%28cropped%29.jpg" height="240px" width="200px" alt="Kim Jong Un" title="Kim Jong Un" />
+						<!--Kim Jong Un Master Of Goon-->
+					</a>
+				</center>
+				
+			</div>
+		</main>
+	</body>
+</html>
